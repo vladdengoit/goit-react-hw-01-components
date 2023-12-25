@@ -1,4 +1,5 @@
 import React from "react";
+import css from "./TransactionHistory.module.css"
 const TransactionHistory = ({props})=>{
   const elements = props.map(el=>
   <thead>
@@ -11,21 +12,9 @@ const TransactionHistory = ({props})=>{
 
   
   return(
-    <table class="transaction-history"style={{
-      margin:2,
-      padding: 5,
-      border: 2,
-      backgroundColor: "lightgray",
-      color: "black",
-    }}>
+    <table className={css.transaction}>
   <thead>
-    <tr style={{
-        margin: 8,
-        padding: 5,
-        border: 2,
-        backgroundColor: "gray",
-        color: "black",
-      }}>
+    <tr className={css.title} >
       <th>Type</th>
       <th>Amount</th>
       <th>Currency</th>

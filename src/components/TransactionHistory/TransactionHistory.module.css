@@ -1,0 +1,23 @@
+.transaction {
+  /* width: 100%; */
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 50px;
+  width: 300px;
+  padding: 0;
+  
+}
+.transaction th,
+.transaction td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  background-color: rgba(127, 255, 191, 0.559);
+} 
+.title{
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  background-color: black
+
+}
