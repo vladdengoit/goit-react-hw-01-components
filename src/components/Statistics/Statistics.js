@@ -7,11 +7,13 @@ const elements  = stats.map(el =>
    <LIshka class="item" key={el.id} somecolor={randomColorRGB()} >
     <span class="label">{el.label}</span>
     <span class="percentage">{el.percentage}</span>
+   
   </LIshka>
   )
 return(
   <Sextion>
-   <h2 class="title">{title||"Upload stats"}</h2>
+    {title && <h2 class="title">{title}</h2>}
+   
   <Ulka>
 {elements}
   </Ulka>

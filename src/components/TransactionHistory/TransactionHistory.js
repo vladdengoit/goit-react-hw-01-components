@@ -4,14 +4,15 @@ const TransactionHistory = ({props})=>{
   const elements = props.map(el=>
   <thead>
           <tr key={props.id}>
-            <th>{el.type}</th>
-            <th>{el.amount}</th>
-            <th>{el.currency}</th>
+           <th>{el.type}</th>
+           <th>{el.amount}</th>
+           <th>{el.currency}</th>
           </tr>
         </thead>)
 
   
   return(
+    
     <table className={css.transaction}>
   <thead>
     <tr className={css.title} >
